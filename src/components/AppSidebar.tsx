@@ -15,9 +15,9 @@ import {
 
 const mainItems = [
   { title: "Dashboard", url: "/", icon: LayoutDashboard },
+  { title: "System Monitor", url: "/monitor", icon: Activity },
   { title: "Network Interfaces", url: "/interfaces", icon: Network },
   { title: "Port Forwarding", url: "/port-forwarding", icon: ArrowRightLeft },
-  { title: "System Monitor", url: "/monitor", icon: Activity },
   { title: "Services", url: "/services", icon: Server },
   { title: "Settings", url: "/settings", icon: Settings },
 ];
