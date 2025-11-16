@@ -6,6 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { DashboardLayout } from "@/components/DashboardLayout";
 import Dashboard from "./pages/Dashboard";
 import PortForwarding from "./pages/PortForwarding";
+import SystemMonitor from "./pages/SystemMonitor";
+import NetworkInterfaces from "./pages/NetworkInterfaces";
+import Services from "./pages/Services";
+import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -19,7 +23,11 @@ const App = () => (
         <DashboardLayout>
           <Routes>
             <Route path="/" element={<Dashboard />} />
+            <Route path="/monitor" element={<SystemMonitor />} />
+            <Route path="/interfaces" element={<NetworkInterfaces />} />
             <Route path="/port-forwarding" element={<PortForwarding />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/settings" element={<Settings />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
