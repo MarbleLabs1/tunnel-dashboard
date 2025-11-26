@@ -1,4 +1,4 @@
-import { LayoutDashboard, Network, ArrowRightLeft, Activity, Settings, Server } from "lucide-react";
+import { LayoutDashboard, Network, ArrowRightLeft, Activity, Settings, Server, FileText } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";
 import {
@@ -18,6 +18,8 @@ const mainItems = [
   { title: "System Monitor", url: "/monitor", icon: Activity },
   { title: "Network Interfaces", url: "/interfaces", icon: Network },
   { title: "Port Forwarding", url: "/port-forwarding", icon: ArrowRightLeft },
+  { title: "Docker", url: "/docker", icon: Server },
+  { title: "File Manager", url: "/files", icon: FileText },
   { title: "Services", url: "/services", icon: Server },
   { title: "Settings", url: "/settings", icon: Settings },
 ];

@@ -10,6 +10,8 @@ import SystemMonitor from "./pages/SystemMonitor";
 import NetworkInterfaces from "./pages/NetworkInterfaces";
 import Services from "./pages/Services";
 import Settings from "./pages/Settings";
+import Docker from "./pages/Docker";
+import FileManager from "./pages/FileManager";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +28,8 @@ const App = () => (
             <Route path="/monitor" element={<SystemMonitor />} />
             <Route path="/interfaces" element={<NetworkInterfaces />} />
             <Route path="/port-forwarding" element={<PortForwarding />} />
+            <Route path="/docker" element={<Docker />} />
+            <Route path="/files" element={<FileManager />} />
             <Route path="/services" element={<Services />} />
             <Route path="/settings" element={<Settings />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
